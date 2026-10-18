@@ -1,6 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<base href="./">
+<meta name="calgin-paths" content="1">
+
 <title>Calgin Enterprises</title>
-<meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Calgin Enterprises: dental, healthcare and food-service supplies in Singapore, home of the ASCEND brand.">
+<link rel="icon" href="images/calgin-mark.png">
+<link rel="alternate" hreflang="en" href="https://surkhojb.github.io/calgin/en/">
+<link rel="alternate" hreflang="es" href="https://surkhojb.github.io/calgin/es/">
+<link rel="alternate" hreflang="x-default" href="https://surkhojb.github.io/calgin/">
+<link rel="canonical" href="https://surkhojb.github.io/calgin/">
+<meta property="og:title" content="Calgin Enterprises">
+<meta property="og:description" content="Calgin Enterprises: dental, F&B, hospitality and healthcare supplies in Singapore since the 1960s. Home of the ASCEND brand.">
+<meta property="og:image" content="https://surkhojb.github.io/calgin/images/calgin-logo-full.png">
+<meta property="og:url" content="https://surkhojb.github.io/calgin/">
+<meta name="description" content="Calgin Enterprises: dental, F&B, hospitality and healthcare supplies in Singapore since the 1960s. Home of the ASCEND brand.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
@@ -53,7 +69,11 @@ button { font: inherit; color: inherit; cursor: pointer; }
 header.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: color-mix(in srgb, var(--surface) 92%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
 .bar .wrap { display: flex; align-items: center; gap: 20px; height: 64px; }
 .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; flex-shrink: 0; }
-.logo img { width: 40px; height: 40px; object-fit: contain; background: #fff; border-radius: 10px; padding: 3px; box-shadow: inset 0 0 0 1px var(--line); }
+.logo img { width: 38px; height: 38px; object-fit: contain; }
+.asc-logo { display: block; width: clamp(240px, 36vw, 440px); height: auto; }
+.placeholder img.asc-ph, .card .ph .placeholder img.asc-ph { position: static; inset: auto; width: min(62%, 220px); height: auto; }
+.foot-logo { display: block; height: 44px; width: auto; margin-bottom: 14px; }
+.div img.smile { display: block; width: min(100%, 230px); height: auto; aspect-ratio: auto; object-fit: contain; background: none; margin-top: -2px; }
 .logo b { font: 800 18px/1 var(--f-display); font-stretch: 112%; letter-spacing: .02em; }
 .logo small { display: block; font: 500 10px/1.2 var(--f-body); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); }
 nav.main { display: flex; gap: 4px; margin-left: auto; }
@@ -437,7 +457,7 @@ dl.kv dd small { display: block; color: var(--ink-3); font-size: 13px; }
 <header class="bar">
   <div class="wrap">
     <a class="logo" href="#top" aria-label="Calgin Enterprises">
-      <img src="images/calgin-logo.png" alt="" width="40" height="40">
+      <img src="images/calgin-mark.png" alt="" width="38" height="38">
       <span><b>CALGIN</b><small>Enterprises · Singapore</small></span>
     </a>
     <nav class="main" aria-label="Main">
@@ -532,7 +552,7 @@ dl.kv dd small { display: block; color: var(--ink-3); font-size: 13px; }
     <div class="wrap">
       <div>
         <div class="eyebrow" data-i18n="ascend.eyebrow"></div>
-        <div class="wordmark" style="margin:16px 0 20px">ASC<span>E</span>N<span>D</span></div>
+        <img class="asc-logo" src="images/ascend-logo.png" alt="ASCEND" width="440" height="92" style="margin:18px 0 22px">
         <p style="font-family:var(--f-display);font-stretch:110%;font-weight:600;color:#EEF2F5;letter-spacing:.04em">PROFESSIONAL HYGIENE. RELIABLE PROTECTION. EVERYDAY PERFORMANCE.</p>
         <p data-i18n="ascend.lead"></p>
         <p data-i18n="ascend.p2"></p>
@@ -634,7 +654,7 @@ dl.kv dd small { display: block; color: var(--ink-3); font-size: 13px; }
 <footer>
   <div class="wrap" style="display:block">
     <div class="cols">
-      <div><b>Calgin Enterprises Pte Ltd</b><span data-i18n="foot.about"></span></div>
+      <div><img class="foot-logo" src="images/calgin-logo-full.png" alt="Calgin Enterprises Pte Ltd" width="149" height="34"><span data-i18n="foot.about"></span></div>
       <div><b data-i18n="nav.products"></b><span id="fcats"></span></div>
       <div><b data-i18n="foot.company"></b><a href="#story" data-i18n="nav.about"></a><a href="#industries" data-i18n="nav.divs"></a><a href="#ascend">ASCEND</a><a href="#customers" data-i18n="nav.clients"></a><a href="#tools" data-i18n="nav.tools"></a><a href="#brands" data-i18n="nav.brands"></a><a href="#order" data-i18n="ord.eyebrow"></a></div>
       <div><b data-i18n="nav.contact"></b><a href="tel:+6562989412">+65 6298 9412</a><a id="f-tel-es" href="tel:+6588662434" hidden>+65 8866 2434 (español)</a><a href="mailto:lilian@calgin.com">lilian@calgin.com</a><a href="mailto:lisa@calgin.com">lisa@calgin.com</a><a href="https://www.facebook.com/ascendsingapore" target="_blank" rel="noopener">Facebook @ascendsingapore</a><a href="https://www.instagram.com/ascend_main" target="_blank" rel="noopener">Instagram @ascend_main</a></div>
@@ -865,6 +885,11 @@ const SIM_ES = { "3% acetic acid": "Ácido acético 3 %", "20% ethanol": "Etanol
 
 let lang = "en";
 try { lang = localStorage.getItem("calgin-lang") || (navigator.language || "").slice(0, 2) === "es" && "es" || "en"; } catch (e) { lang = (navigator.language || "").startsWith("es") ? "es" : "en"; }
+/* Shareable language links: /es/ and /en/ pages (or ?lang=es) pick the language */
+const PATHS = !!document.querySelector('meta[name="calgin-paths"]');
+const forced = (document.querySelector('meta[name="calgin-lang"]') || {}).content || new URLSearchParams(location.search).get("lang");
+if (forced === "es" || forced === "en") lang = forced;
+function syncLangUrl() { if (!PATHS) return; try { history.replaceState(null, "", new URL(lang + "/" + location.hash, document.baseURI)); } catch (e) {} }
 let cat = "all", query = "", ind = "";
 const $ = (s, el = document) => el.querySelector(s);
 const t = k => (T[lang] && T[lang][k]) || T.en[k] || k;
@@ -917,7 +942,7 @@ function matches(p) {
 function media(p, cls = "") {
   if (p.image) return `<img src="${p.image}" alt="${esc(L(p.name))}" loading="lazy" class="${cls}">`;
   const ean = (p.variants || []).map(v => v.ean).find(Boolean);
-  if (p.brand === "ASCEND") return `<div class="placeholder asc"><span class="aw">ASC<span>E</span>N<span>D</span></span><small>${t("ph.box")}</small></div>`;
+  if (p.brand === "ASCEND") return `<div class="placeholder asc"><img class="asc-ph" src="images/ascend-logo.png" alt="ASCEND"><small>${t("ph.box")}</small></div>`;
   return `<div class="placeholder">${ICON[p.category] || ""}${ean ? `<span class="mono">EAN ${ean}</span>` : ""}</div>`;
 }
 function badge(p) {
@@ -1006,7 +1031,7 @@ function renderPortfolio() {
 
 /* v2: industries */
 const IND = [
-  { id: "dental", img: "images/model-kuuki-purple.jpg", en: "Dental Solutions", es: "Soluciones dentales",
+  { id: "dental", img: "images/model-kuuki-purple.jpg", tag: "images/smile-tagline.png", en: "Dental Solutions", es: "Soluciones dentales",
     d: ["Dependable products and supplies that support dental professionals and institutions in daily clinical work.", "Productos y suministros fiables que apoyan a profesionales e instituciones dentales en su trabajo clínico diario."],
     b: [["Dental consumables", "Dental materials", "Infection control products", "Dental equipment and accessories", "Professional dental supplies"], ["Consumibles dentales", "Materiales dentales", "Productos de control de infecciones", "Equipos y accesorios dentales", "Suministros dentales profesionales"]],
     s: ["Dental clinics, hospitals, dental centres and healthcare institutions", "Clínicas dentales, hospitales, centros dentales e instituciones sanitarias"],
@@ -1029,7 +1054,7 @@ const IND = [
 ];
 function renderInds() {
   const k = lang === "es" ? 1 : 0;
-  $("#inds").innerHTML = IND.map(x => `<article class="div"><img src="${x.img}" alt="" loading="lazy"><div class="bd"><h3>${esc(L(x))}</h3><p>${esc(x.d[k])}</p><ul>${x.b[k].map(b => `<li>${esc(b)}</li>`).join("")}</ul><div class="serve"><b>${t("ind.serving")}:</b> ${esc(x.s[k])}</div><button type="button" class="btn ghost small" data-ind="${x.id}">${t("ind.view")} · ${x.ids.filter(byId).length}</button></div></article>`).join("");
+  $("#inds").innerHTML = IND.map(x => `<article class="div"><img src="${x.img}" alt="" loading="lazy"><div class="bd"><h3>${esc(L(x))}</h3>${x.tag ? `<img class="smile" src="${x.tag}" alt="Your smile, our commitment!">` : ""}<p>${esc(x.d[k])}</p><ul>${x.b[k].map(b => `<li>${esc(b)}</li>`).join("")}</ul><div class="serve"><b>${t("ind.serving")}:</b> ${esc(x.s[k])}</div><button type="button" class="btn ghost small" data-ind="${x.id}">${t("ind.view")} · ${x.ids.filter(byId).length}</button></div></article>`).join("");
 }
 
 /* v2: size finder + comparison */
@@ -1134,7 +1159,7 @@ function openSheet(id) {
   galleryIdx = 0; renderSheet(id);
   const d = $("#sheet"); if (!d.open) d.showModal();
   d.scrollTop = 0;
-  try { history.replaceState(null, "", "#" + id); } catch (e) {}
+  try { history.replaceState(null, "", location.pathname + location.search + "#" + id); } catch (e) {}
 }
 function closeSheet() { const d = $("#sheet"); if (d.open) d.close(); }
 $("#sheet").addEventListener("close", () => { try { history.replaceState(null, "", location.pathname + location.search); } catch (e) {} });
@@ -1149,9 +1174,11 @@ function copyText(text) {
 }
 
 document.addEventListener("click", e => {
+  const a = e.target.closest('a[href^="#"]');
+  if (a && PATHS) { const t = document.getElementById(a.getAttribute("href").slice(1)); if (t) { e.preventDefault(); t.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }); } }
   const el = e.target.closest("[data-open],[data-close],[data-copy],[data-share],[data-quote],[data-qclose],[data-g],[data-cat],[data-lang],[data-ind]");
   if (!el) return;
-  if (el.dataset.lang) { lang = el.dataset.lang; try { localStorage.setItem("calgin-lang", lang); } catch (e) {} applyI18n(); }
+  if (el.dataset.lang) { lang = el.dataset.lang; try { localStorage.setItem("calgin-lang", lang); } catch (e) {} applyI18n(); syncLangUrl(); }
   else if (el.dataset.cat) { e.preventDefault(); cat = el.dataset.cat; renderChips(); renderGrid(); if (el.dataset.go) $("#products").scrollIntoView(); }
   else if ("ind" in el.dataset) { ind = el.dataset.ind; renderChips(); renderGrid(); if (ind) $("#products").scrollIntoView(); }
   else if (el.dataset.open) { e.preventDefault(); openSheet(el.dataset.open); }
@@ -1195,3 +1222,6 @@ if ("IntersectionObserver" in window) {
 const h = location.hash.slice(1);
 if (h && byId(h)) openSheet(h);
 </script>
+
+</body>
+</html>
